@@ -1,4 +1,4 @@
- ☕ Hotel Coffee Shop Management System
+ Hotel Coffee Shop Management System
  
 ## Overview
 
