@@ -1,31 +1,63 @@
-Hotel Coffee Shop Management System
-This is a console-based Coffee Shop Management System developed in C language. The system allows users to browse a coffee menu, place orders, make payments via cash or card, and for administrators to manage items, view sales, and perform backups.
+ Hotel Coffee Shop Management System
+Overview
+<p align="justify"> The Hotel Coffee Shop Management System is a terminal-based application developed in C that simulates the core operations of a coffee shop. It manages the coffee menu, allows users to place orders, and lets administrators manage stock, view total sales, and generate backups. This system uses dynamic data structures (linked lists) for managing food items and includes features such as stock updates, payment tracking, and real-time order recording through the command-line interface. </p>
+Abstract
+<p align="justify"> This project offers a complete solution for managing the daily operations of a small coffee shop or hotel cafe. The program supports two types of users: customers and admins. Customers can view the coffee menu, place orders, and pay via cash or card. Admins can access a secure panel to add or delete menu items, track total sales, generate backups, and monitor stock levels. The system is entirely written in C using linked lists to dynamically manage inventory data. </p>
+Features
+Interactive Main Menu
+Navigate between food list, admin panel, and exit option easily.
 
- Features
-1.Customer Panel
-•	View coffee item list with prices and stock.
-•	Place orders by selecting item number and quantity.
-•	Choose between cash or card payment.
-•	Automatically updates stock after purchase.
+Dynamic Menu Management (Linked List)
+Add, delete, or update items dynamically using singly linked lists.
 
-2 Admin Panel
-Accessible by entering a password (12345):
-•	View total cash collected for the day.
-•	View card payment history.
-•	Add new coffee items.
-•	Delete existing items by serial number.
-•	View instant item list and stock.
-•	Count total coffee items.
-•	Backup transaction and stock data to a .txt file.
-•	View instant order summary.
+Real-Time Order Placement
+Users can place orders by selecting item and quantity. Stock updates immediately.
 
-3 Technologies Used
-•	C Language
-•	Linked Lists for dynamic menu and order management.
-•	File Handling for data backup.
-•	Console UI with ASCII formatting and loading animations.
+Multiple Payment Options
+Supports cash and card payments. Card history is saved for reference.
 
-4.File Structure
-•	main.c – Full source code of the project.
-•	Backups are stored as .txt files generated during runtime.
+Admin Control Panel
+Access sales data, manage food items, view orders, and perform data backups.
 
+Animated Console UI
+Includes animated welcome screen and loading bar for a polished CLI experience.
+
+System Modules
+ Customer Panel
+View coffee menu
+
+Place order
+
+Make payment (cash or card)
+
+Admin Panel (Password Protected: 12345)
+Add new coffee items
+
+Delete items by serial number
+
+View all menu items
+
+View card payments and total cash collected
+
+Count total menu items
+
+Instant order preview
+
+Backup data to file
+
+Tech Stack
+Programming Language:
+
+C
+
+Core Concepts:
+
+Linked Lists for inventory management
+
+File Handling for backups
+
+Console UI with standard I/O
+
+Libraries Used:
+
+stdio.h, stdlib.h, string.h, conio.h, time.h, windows.h (for Sleep)
